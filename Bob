@@ -1,44 +1,63 @@
+# This is the python client that Bob can run on his computer
+# Bob enters the private number he has and connects to Alice
+# and gets the final result as the output
+
+# Import all the required libraries
 import Encoding
 import socket
 import pickle
 import sys
 
-y = int(input())
+
+# Method to recieve all the packets of a information if the information is greater than 4 kb
+def recvall(sock):
+    data = b''
+    while True:
+        packet = sock.recv(4096)
+        data += packet
+        if len(packet) < 4096:
+            break
+    return data
+
+
+# Input a private integer
+y = int(input("Enter your private integer: "))
+
+# If the number is negative exit the system
 if y < 0:
     sys.exit("You entered a negative number")
+
 n = len(bin(y)[2:])
 
+# Connect with alice to receive T
 HOST = 'localhost'
 PORT = 50007
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((HOST, PORT))
-# data = b""
-packet = s.recv(4096)
+packet = recvall(s)
 
-# data += packet
-
+# Unpack T from the received Pickle
 T = pickle.loads(packet)
-# print(T)
-if (len(T[0]) < n):
+
+# Check the length of T to see if T is less than your private input
+if len(T[0]) < n:
     conf = '0'
     s.send(conf.encode())
     print("Your number is greater than Alice's")
     sys.exit()
-    # s.send()
+
 else:
     conf = '1'
     s.send(conf.encode())
-# s.send(conf.encode())
-# s.send("Received T".encode())
-# print("Sent confirmation message")
 
+# Make the zero encoding of the private input
 zero_encoding_y = Encoding.make_zero_encoding(y, len(T[0]))
-# print(zero_encoding_y)
+
 ciphertext = []
+
+# Check encoding against T as per the protocol defined
 for i in zero_encoding_y:
-    # t = bin(i)[2:]
     t = i[::-1]
-    # print(t[::-1])
     c = (1, 1)
     for j in range(1, len(t)+1):
         if t[-j] == '1':
@@ -46,11 +65,15 @@ for i in zero_encoding_y:
         else:
             c = (c[0] * T[0][-j][0], c[1] * T[0][-j][1])
     ciphertext.append(c)
+
+# Send the ciphertext to Alice back
 ciphertext = pickle.dumps(ciphertext)
 s.sendall(ciphertext)
 print("Sent Ciphertext")
-# d = ''
-d = s.recv(4096)
-print(d.decode())
+
+# Receive the final result
+final_result = s.recv(4096)
+print(final_result.decode())
+
+# Close the connection
 s.close()
-# print(zero_encoding_y)

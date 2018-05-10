@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="336eb2d8-7d1b-4181-9e57-e81c3f2585e0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Bob" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Encoding.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alice.py" beforeDir="false" afterPath="$PROJECT_DIR$/Alice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamplePaperProblem.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProofOfConcept.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bob" beforeDir="false" afterPath="$PROJECT_DIR$/Bob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProofOfConcept.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProofOfConcept.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecureElgamal.py" beforeDir="false" afterPath="$PROJECT_DIR$/SecureElgamal.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +19,8 @@
       <file leaf-file-name="ProofOfConcept.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProofOfConcept.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+            <state relative-caret-position="-304">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -31,7 +31,7 @@
       <file leaf-file-name="Encoding.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Encoding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3">
+            <state relative-caret-position="-169">
               <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
             </state>
           </provider>
@@ -40,8 +40,8 @@
       <file leaf-file-name="Alice.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Alice.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+            <state relative-caret-position="-197">
+              <caret line="75" column="15" lean-forward="true" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bob" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Bob" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Bob">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            <state relative-caret-position="1155">
+              <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -61,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecureElgamal.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SecureElgamal.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SecureElgamal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            <state relative-caret-position="281">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -101,9 +101,9 @@
         <option value="$PROJECT_DIR$/PyClient.py" />
         <option value="$PROJECT_DIR$/Encoding.py" />
         <option value="$PROJECT_DIR$/SecureElgamal.py" />
+        <option value="$PROJECT_DIR$/ProofOfConcept.py" />
         <option value="$PROJECT_DIR$/Alice.py" />
         <option value="$PROJECT_DIR$/Bob" />
-        <option value="$PROJECT_DIR$/ProofOfConcept.py" />
       </list>
     </option>
   </component>
@@ -154,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ProofOfConcept">
+  <component name="RunManager" selected="Python.SecureElgamal">
     <configuration name="Alice" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AppliedCrypto" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -254,11 +254,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.SecureElgamal" />
         <item itemvalue="Python.ProofOfConcept" />
         <item itemvalue="Python.Bob" />
         <item itemvalue="Python.Alice" />
         <item itemvalue="Python.Encoding" />
-        <item itemvalue="Python.SecureElgamal" />
       </list>
     </recent_temporary>
   </component>
@@ -279,10 +279,10 @@
     <frame x="57" y="22" width="1223" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.69266057" visible="true" weight="0.23793676" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.69266057" visible="true" weight="0.23793676" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.337386" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.337386" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32905984" />
       <window_info id="Structure" order="1" sideWeight="0.30733946" side_tool="true" visible="true" weight="0.23793676" />
@@ -324,13 +324,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Bob</url>
-          <line>52</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="7" />
     </breakpoint-manager>
   </component>
@@ -579,49 +572,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Bob">
+    <entry file="file://$PROJECT_DIR$/SecureElgamal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state relative-caret-position="281">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Alice.py">
+    <entry file="file://$PROJECT_DIR$/ProofOfConcept.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        <state relative-caret-position="-304">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Encoding.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
+        <state relative-caret-position="-169">
           <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProofOfConcept.py">
+    <entry file="file://$PROJECT_DIR$/Alice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+        <state relative-caret-position="-197">
+          <caret line="75" column="15" lean-forward="true" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SecureElgamal.py">
+    <entry file="file://$PROJECT_DIR$/Bob">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        <state relative-caret-position="1155">
+          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
