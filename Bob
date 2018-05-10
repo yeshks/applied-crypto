@@ -1,0 +1,56 @@
+import Encoding
+import socket
+import pickle
+import sys
+
+y = int(input())
+if y < 0:
+    sys.exit("You entered a negative number")
+n = len(bin(y)[2:])
+
+HOST = 'localhost'
+PORT = 50007
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((HOST, PORT))
+# data = b""
+packet = s.recv(4096)
+
+# data += packet
+
+T = pickle.loads(packet)
+# print(T)
+if (len(T[0]) < n):
+    conf = '0'
+    s.send(conf.encode())
+    print("Your number is greater than Alice's")
+    sys.exit()
+    # s.send()
+else:
+    conf = '1'
+    s.send(conf.encode())
+# s.send(conf.encode())
+# s.send("Received T".encode())
+# print("Sent confirmation message")
+
+zero_encoding_y = Encoding.make_zero_encoding(y, len(T[0]))
+# print(zero_encoding_y)
+ciphertext = []
+for i in zero_encoding_y:
+    # t = bin(i)[2:]
+    t = i[::-1]
+    # print(t[::-1])
+    c = (1, 1)
+    for j in range(1, len(t)+1):
+        if t[-j] == '1':
+            c = (c[0] * T[1][-j][0], c[1] * T[1][-j][1])
+        else:
+            c = (c[0] * T[0][-j][0], c[1] * T[0][-j][1])
+    ciphertext.append(c)
+ciphertext = pickle.dumps(ciphertext)
+s.sendall(ciphertext)
+print("Sent Ciphertext")
+# d = ''
+d = s.recv(4096)
+print(d.decode())
+s.close()
+# print(zero_encoding_y)
